@@ -1,3 +1,21 @@
+
+#SENTIMENT ANALYSIS
+
+*COMPANY *: CODTECH IT SOLUTIONS
+
+*NAME *: Yogesh S
+
+*INTERN ID *: CTIS3967
+
+*DOMAIN *: Data Analysis
+
+*DURATION *: 4 WEEEKS
+
+*MENTOR *: NEELA SANTOSH
+
+
+
+
 📊 Sentiment Analysis using Python
 
 📌 Internship Task – Data Analytics
@@ -75,6 +93,8 @@ Each text entry is labeled with a predicted sentiment
 Sentiment distribution is visualized
 
 Dataset is enhanced with sentiment insights
+
+Output
 
 📌 Conclusion
 
