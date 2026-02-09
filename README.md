@@ -94,7 +94,11 @@ Sentiment distribution is visualized
 
 Dataset is enhanced with sentiment insights
 
-Output
+Output:
+
+
+
+<img width="754" height="289" alt="Image" src="https://github.com/user-attachments/assets/5a4d55f2-df49-4d53-a053-6b12a97908ea" />
 
 📌 Conclusion
 
