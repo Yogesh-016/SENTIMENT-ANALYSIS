@@ -1,115 +1,154 @@
+# 📊 Sentiment Analysis using Python & NLP
 
-#SENTIMENT ANALYSIS
+![Python](https://img.shields.io/badge/Language-Python-blue?style=flat&logo=python)
+![NLP](https://img.shields.io/badge/Technique-NLP-purple?style=flat)
+![Library](https://img.shields.io/badge/Library-TextBlob-teal?style=flat)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat)
 
-*COMPANY *: CODTECH IT SOLUTIONS
+---
 
-*NAME *: Yogesh S
+## 🏢 Internship Details
 
-*INTERN ID *: CTIS3967
+| Field | Details |
+|---|---|
+| **Company** | CODTECH IT SOLUTIONS |
+| **Name** | Yogesh S |
+| **Intern ID** | CTIS3967 |
+| **Domain** | Data Analysis |
+| **Duration** | 4 Weeks |
+| **Mentor** | Neela Santosh |
+| **Task** | Task-3 – Sentiment Analysis using Python |
 
-*DOMAIN *: Data Analysis
+---
 
-*DURATION *: 4 WEEEKS
+## 📖 Project Overview
 
-*MENTOR *: NEELA SANTOSH
-
-
-
-
-📊 Sentiment Analysis using Python
-
-📌 Internship Task – Data Analytics
-
-📖 Project Overview
-
-This project focuses on performing Sentiment Analysis on textual data using Natural Language Processing (NLP) techniques.
-The goal is to analyze text content and classify it into Positive, Negative, or Neutral sentiments to understand public opinion and emotional trends.
+This project focuses on performing **Sentiment Analysis** on textual data using **Natural Language Processing (NLP)** techniques. The goal is to analyze text content and classify it into **Positive**, **Negative**, or **Neutral** sentiments to understand public opinion and emotional trends.
 
 The dataset contains text data along with demographic and country-level information, making it suitable for real-world sentiment analysis applications.
 
+---
 
-🎯 Objectives
+## 🎯 Objectives
 
-Analyze textual data using NLP
+- Analyze textual data using NLP techniques
+- Classify sentiments as **Positive**, **Negative**, or **Neutral**
+- Generate insights from unstructured text data
+- Visualize sentiment distribution using charts
+- Support decision-making using sentiment patterns
 
-Classify sentiments as Positive, Negative, or Neutral
+---
 
-Generate insights from unstructured text data
+## 🛠️ Tools & Technologies Used
 
-Visualize sentiment distribution
+| Library | Purpose |
+|---|---|
+| Python | Core programming language |
+| Pandas | Data loading, manipulation & analysis |
+| TextBlob | Sentiment polarity analysis |
+| Matplotlib | Data visualization |
+| Seaborn | Statistical visualizations |
 
-Support decision-making using sentiment patterns
+---
 
-🛠️ Tools & Technologies Used
+## ⚙️ Methodology
 
-Python
+```
+1. Load & Inspect Dataset
+        ↓
+2. Clean & Preprocess Text Data
+        ↓
+3. Apply TextBlob Sentiment Analysis
+        ↓
+4. Calculate Polarity Score per Text Entry
+        ↓
+5. Classify Sentiment Based on Polarity
+        ↓
+6. Store Results → Predicted_Sentiment Column
+        ↓
+7. Visualize Sentiment Distribution
+```
 
-Pandas – Data manipulation
+---
 
-TextBlob – Sentiment analysis
+## 🧪 Sentiment Classification Logic
 
-Matplotlib – Data visualization
+Sentiment is determined based on the **TextBlob polarity score** (ranging from `-1.0` to `+1.0`):
 
-Seaborn – Statistical visualization
+| Polarity Score | Sentiment Label |
+|---|---|
+| Polarity > 0 | ✅ Positive |
+| Polarity < 0 | ❌ Negative |
+| Polarity = 0 | ➖ Neutral |
 
-📌 Methodology
+```python
+# Sentiment classification logic
+def classify_sentiment(polarity):
+    if polarity > 0:
+        return "Positive"
+    elif polarity < 0:
+        return "Negative"
+    else:
+        return "Neutral"
 
-Load and inspect the dataset
+df["Predicted_Sentiment"] = df["text_column"].apply(
+    lambda x: classify_sentiment(TextBlob(str(x)).sentiment.polarity)
+)
+```
 
-Clean and preprocess text data
+---
 
-Apply TextBlob to calculate sentiment polarity
+## 📊 Visualization
 
-Classify sentiment based on polarity score
+A **bar chart** displays the count distribution across all sentiment categories:
 
-Store results in a new column (Predicted_Sentiment)
+- ✅ Positive sentiments
+- ❌ Negative sentiments
+- ➖ Neutral sentiments
 
-Visualize sentiment distribution using graphs
+This helps in understanding overall **public opinion trends** at a glance.
 
-🧪 Sentiment Classification Logic
+### Output Preview
 
-Positive: Polarity > 0
+![Sentiment Analysis Output](https://github.com/user-attachments/assets/5a4d55f2-df49-4d53-a053-6b12a97908ea)
 
-Negative: Polarity < 0
+---
 
-Neutral: Polarity = 0
+## 📂 Project Structure
 
-📊 Visualization
+```
+Sentiment-Analysis/
+│
+├── dataset.csv                  # Input text dataset
+├── sentiment_analysis.ipynb     # Main Jupyter Notebook
+└── README.md                    # Project documentation
+```
 
-A bar chart is used to display the count of:
+---
 
-Positive sentiments
+## ✅ Results
 
-Negative sentiments
+- Each text entry is labeled with a **predicted sentiment**
+- Sentiment distribution is clearly **visualized** via bar chart
+- Dataset is enhanced with actionable **sentiment insights**
 
-Neutral sentiments
+---
 
-This helps in understanding overall public opinion trends.
+## 📌 Conclusion
 
-✅ Results
+This project demonstrates how **NLP techniques** can be used to extract meaningful insights from unstructured text data. Sentiment analysis plays a crucial role in understanding:
 
-Each text entry is labeled with a predicted sentiment
+- 🛒 Customer feedback & product reviews
+- 📱 Social media opinions & trends
+- 📈 Market sentiment & brand perception
 
-Sentiment distribution is visualized
+---
 
-Dataset is enhanced with sentiment insights
+## 👤 Author
 
-Output:
+**Yogesh S**  
+Aspiring Data Analyst | NLP & Machine Learning Enthusiast
 
+---
 
-
-<img width="754" height="289" alt="Image" src="https://github.com/user-attachments/assets/5a4d55f2-df49-4d53-a053-6b12a97908ea" />
-
-📌 Conclusion
-
-This project demonstrates how NLP techniques can be used to extract meaningful insights from text data.
-Sentiment analysis plays a crucial role in understanding customer feedback, social media opinions, and market trends.
-
-
-👤 Author
-
-Name: Yogesh S
-
-Domain: Data Analytics
-
-
+> 📝 *This project was completed as part of a Data Analysis internship at CODTECH IT SOLUTIONS.*
